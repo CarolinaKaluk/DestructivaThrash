@@ -1,0 +1,24 @@
+header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .logo {
+    width: 400px;
+  }
+
+  .nav {
+    display: flex;
+
+    .menu {
+      list-style: none;
+      display: flex;
+      text-transform: uppercase;
+      font-weight: 600;
+      gap: 180px;
+      justify-content: center;
+    }
+  }
+}

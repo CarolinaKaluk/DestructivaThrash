@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: black;
+  color: whitesmoke;
+}
+
 body {
   font-family: "Mukta", sans-serif;
   background-color: #ffffffc5;
@@ -15,6 +20,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .background-image {
@@ -30,12 +36,17 @@ header {
   width: 400px;
 }
 
+.nav {
+  display: flex;
+}
+
 .menu {
   list-style: none;
   display: flex;
   text-transform: uppercase;
   font-weight: 600;
-  gap: 170px;
+  gap: 180px;
+  justify-content: center;
 }
 
 .menu__item {
@@ -48,6 +59,7 @@ header {
 .menu__item:hover {
   opacity: 0.4;
   height: 90px;
+  color: black;
 }
 
 .cd {
@@ -71,7 +83,7 @@ header {
 }
 
 #intro {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .display1 {
@@ -123,15 +135,25 @@ header {
 
 .imagen-banda1 {
   margin-top: 70px;
-  height: 320px;
-  padding-left: 200px;
+  height: 270px;
+  padding-left: 180px;
 }
 
-.footer {
-  background-color: black;
-  display: flex;
-  position: sticky;
+.texto-banda {
+  align-items: center;
+  font-size: 15px;
+  font-weight: 200;
+  padding-left: 680px;
+  color: whitesmoke;
   position: relative;
+}
+
+.titulo-banda {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  gap: 30px;
+  line-height: 1;
 }
 
 .grid-container {
@@ -162,6 +184,13 @@ header {
   margin-left: 530px;
   margin-top: 1rem;
   padding: 10px 10px 15px 10px;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  position: sticky;
+  position: relative;
 }
 
 /** animista **/
